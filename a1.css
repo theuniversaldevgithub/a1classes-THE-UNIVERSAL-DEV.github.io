@@ -13,3 +13,42 @@
 .slider{
     margin-top: 11rem;
 }
+/* yaha se u4m ka slider hai  */
+.u4mslider{
+	overflow: hidden;
+	/* text-decoration: none; */
+	margin-top: 10rem;
+}
+.u4mslider figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 9s u4mslider infinite;
+}
+.u4mslider figure img {
+	width: 20%;
+	float: left;
+
+}
+@keyframes u4mslider{
+	0%{
+		left: 0;
+	}
+	33%{
+		left: 0;
+	}
+	35%{
+		left: -100%;
+	}
+	70%{
+		left: -100%;
+	}
+	75%{
+		left: -200%;
+	}
+
+	100%{
+		left: -200%;
+	}
+}
