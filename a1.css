@@ -1,7 +1,17 @@
 *{
     font-family: 'Roboto', sans-serif;
-  
+   
 }
+#loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #fff
+	url("loading.gif")
+	 no-repeat center center;	
+	z-index: 99999;
+}
+
 #copyright{
     text-decoration: none;color: black;
     font-weight: bold;
@@ -10,14 +20,12 @@
 .navbtn{
     font-size: 2rem;
 }
-.slider{
-    margin-top: 11rem;
-}
+
 /* yaha se u4m ka slider hai  */
 .u4mslider{
 	overflow: hidden;
 	/* text-decoration: none; */
-	margin-top: 10rem;
+	margin-top: 11rem;
 }
 .u4mslider figure{
 	position: relative;

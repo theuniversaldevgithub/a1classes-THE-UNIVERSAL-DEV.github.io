@@ -21,10 +21,17 @@
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   <!-- tailwind cdn -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- ye vo effect ka link hai filp  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
   <title>A1 CLASSES</title>
 </head>
+<!-- js for loader -->
 
-<body>
+<body onload="myFunction()">
+  <div id="loading"></div>
+
   <!-- nav bar hai ye  -->
   <div class="relative bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
@@ -202,14 +209,14 @@
         </div>
       </div>
     </div>
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <img style="height: 480; width: 100%;" src="photos/a1.jpeg" alt="a1classes">
+      <!-- h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full -->
+    </div>
   </main>
   </div>
   </div>
-  <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-    <img style="height: 100%; width: 100%;" src="photos/a1.jpeg" alt="a1classes">
-    <!-- h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full -->
-  </div>
-  </div>
+
 <!-- 
 <div class="slider">
     <h2>sir here I will make photos slider</h2>
@@ -217,102 +224,20 @@
 <img style="width: 100%;" src="photos/achive1.jpg" alt="students achivement">
 </div> -->
 
-
-
-<div class="u4mslider">
+<div class="u4mslider" data-aos="fade-in">
   <figure>
   
-    <img src="photos/achive.jpg" alt="squidgame">
+    <img src="photos/achive.jpg" alt="A1 CLASSES STUDENTS ACHIVEMENT">
     
-    <img src="photos/achive1.jpg" alt="6underground">
+    <img src="photos/achive1.jpg" alt="A1 CLASSES STUDENTS ACHIVEMENT">
     
-    <img src="photos/achive2.jpg" alt="thefailyman">
+    <img src="photos/achive2.jpg" alt="A1 CLASSES STUDENTS ACHIVEMENT">
   
   </figure>
   <!-- <div class="u4mbtndiv">
   <a href="https://theuniversaldevgithub.github.io/UNIVERSAL-4-ME.github.io/"target="_blank" id="u4mbtn">UNIVERSAL 4 ME</a>
 </div> -->
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -383,7 +308,7 @@
 
 
 
-
+    
 
   <div style="margin-top: 10rem;text-align: center;">
     <h1>THE UNIVERSAL DEV WILL REMOVE THIS COPYRIGHT</h1>
@@ -391,6 +316,27 @@
         href="https://theuniversaldevgithub.github.io/THEUNIVERSALDEV.github.io/"><u>THE UNIVERSAL DEV</a></u><br>
       ALL RIGHTS RESERVED.</b></h2>
   </div>
+   <!-- ye script effect ki hai  -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init({
+       offset: 200, duration: 700
+     });
+     </script>
+  <!-- ye loader ki script hai -->
+  <script>
+    // $(document).ready(function(){
+    // 	$('div#loading').removeAttr('id');
+    // });
+    var preloader = document.getElementById("loading");
+    // window.addEventListener('load', function(){
+    // 	preloader.style.display = 'none';
+    // 	})
+
+    function myFunction() {
+      preloader.style.display = 'none';
+    };
+  </script>
     <!-- ye wali script booot ki hai  -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
