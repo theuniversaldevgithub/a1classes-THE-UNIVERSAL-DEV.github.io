@@ -26,6 +26,14 @@
 </head>
 <body>
   <header id="header" class="fixed-top d-flex align-items-center">
+     <div id="welcomemodaldra1" class="modaldra1">
+      <div class="modaldra1-content">
+        <img src="imp-message.webp" alt="disclaimer">
+        <h2>Important Message</h2>
+        <p>**We do not provide online teaching services or online teaching jobs. Our institute exclusively offers in-person coaching classes. Kindly refrain from making any payments for online teaching. We cannot be held accountable for any financial losses resulting from interactions with scammers. Your understanding is greatly appreciated.**</p>
+        <button id="closemodaldra1">Close</button>
+      </div>
+    </div>
     <div class="container d-flex align-items-center">
       <h1 class="logo me-auto"><a href="index.html"><img src="photos/a1crop.png" alt="a1classes"><span></span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
@@ -319,6 +327,28 @@
           </div>
   </footer>
   <!-- End Footer -->
+           <!-- script for modal -->
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const modaldra1 = document.getElementById("welcomemodaldra1");
+            const closemodaldra1Button = document.getElementById("closemodaldra1");
+    
+            // Show the modaldra1 on page load
+            modaldra1.style.display = "block";
+    
+            // Close the modaldra1 when the close button is clicked
+            closemodaldra1Button.addEventListener("click", function() {
+                modaldra1.style.display = "none";
+            });
+    
+            // Close the modaldra1 when the overlay is clicked
+            modaldra1.addEventListener("click", function(event) {
+                if (event.target === modaldra1) {
+                    modaldra1.style.display = "none";
+                }
+            });
+        });
+    </script>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
   <!-- Vendor JS Files -->
